@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM golang:1.7-alpine
 MAINTAINER Yuki Shinohara <shinofara+docker@gmail.com>
 
 RUN apk update && \
