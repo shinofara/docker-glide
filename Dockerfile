@@ -1,8 +1,9 @@
-FROM alpine:3.4
+FROM golang:1.7-alpine
 MAINTAINER Yuki Shinohara <shinofara+docker@gmail.com>
 
 RUN apk update && \
-    apk add --no-cache --virtual .glide-installdeps curl tar
+    apk add --no-cache --virtual .glide-installdeps curl tar && \
+    apk add git
 
 RUN curl -LO https://github.com/Masterminds/glide/releases/download/v0.12.2/glide-v0.12.2-linux-amd64.tar.gz && \
     tar zxfv glide-v0.12.2-linux-amd64.tar.gz && \
