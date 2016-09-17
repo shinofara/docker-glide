@@ -10,7 +10,7 @@ alpine 3.4
 $ docker run --rm -t \
     -v /path/to/src/dir:/work \
     shinofara/docker-glide:<version> <commnad>
-            ```
+```
 
 ### Example
 
